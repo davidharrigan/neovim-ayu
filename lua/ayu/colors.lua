@@ -17,6 +17,7 @@ function colors.generate(mirage)
       colors.func = '#FFD173'
       colors.entity = '#73D0FF'
       colors.string = '#D5FF80'
+      colors.boolean = '#CB9FF8'
       colors.regexp = '#95E6CB'
       colors.markup = '#F28779'
       colors.keyword = '#FFAD66'
@@ -26,6 +27,10 @@ function colors.generate(mirage)
       colors.operator = '#F29E74'
       colors.error = '#FF6666'
       colors.lsp_parameter = '#D3B8F9'
+      colors.lsp_inlay_hint = {
+        fg = '#5E656d',
+        bg = '#161c26',
+      }
 
       colors.line = '#171B24'
       colors.panel_bg = '#1C212B'
@@ -58,6 +63,7 @@ function colors.generate(mirage)
       colors.func = '#FFB454'
       colors.entity = '#59C2FF'
       colors.string = '#AAD94C'
+      colors.boolean = '#CB9FF8'
       colors.regexp = '#95E6CB'
       colors.markup = '#F07178'
       colors.keyword = '#FF8F40'
@@ -67,6 +73,10 @@ function colors.generate(mirage)
       colors.operator = '#F29668'
       colors.error = '#D95757'
       colors.lsp_parameter = '#CB9FF8'
+      colors.lsp_inlay_hint = {
+        fg = '#5E656d',
+        bg = '#161c26',
+      }
 
       colors.line = '#11151C'
       colors.panel_bg = '#0F131A'
@@ -109,6 +119,10 @@ function colors.generate(mirage)
     colors.operator = '#ED9366'
     colors.error = '#E65050'
     colors.lsp_parameter = '#C788CE'
+    colors.lsp_inlay_hint = {
+      fg = '#5E656d',
+      bg = '#161c26',
+    }
 
     colors.line = '#E7EAED'
     colors.panel_bg = '#F3F4F5'

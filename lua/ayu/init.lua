@@ -1,5 +1,6 @@
 local colors = require('ayu.colors')
 local config = require('ayu.config')
+local highlight = require('vim.highlight')
 local ayu = {}
 
 --- Apply terminal highlighting.
@@ -75,6 +76,7 @@ local function set_groups()
     Comment = { fg = colors.comment, italic = true },
     Constant = { fg = colors.constant },
     String = { fg = colors.string },
+    Boolean = { fg = colors.boolean },
     Identifier = { fg = colors.entity },
     Function = { fg = colors.func },
     Statement = { fg = colors.keyword },
@@ -105,6 +107,7 @@ local function set_groups()
     DiffChange = { bg = colors.selection_inactive },
 
     -- LSP.
+    LspInlayHint = colors.lsp_inlay_hint,
     DiagnosticError = { fg = colors.error },
     DiagnosticWarn = { fg = colors.keyword },
     DiagnosticInfo = { fg = colors.tag },
@@ -119,6 +122,7 @@ local function set_groups()
     markdownCode = { fg = colors.special },
 
     -- TreeSitter.
+    ['@boolean'] = { link = 'Boolean' },
     ['@property'] = { fg = colors.tag },
     ['@tag'] = { fg = colors.keyword },
     ['@tag.attribute'] = { fg = colors.entity },
