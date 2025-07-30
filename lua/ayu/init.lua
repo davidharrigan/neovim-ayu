@@ -1,6 +1,5 @@
 local colors = require('ayu.colors')
 local config = require('ayu.config')
-local highlight = require('vim.highlight')
 local ayu = {}
 
 --- Apply terminal highlighting.
