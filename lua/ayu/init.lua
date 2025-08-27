@@ -106,7 +106,6 @@ local function set_groups()
     DiffChange = { bg = colors.selection_inactive },
 
     -- LSP.
-    LspInlayHint = colors.lsp_inlay_hint,
     DiagnosticError = { fg = colors.error },
     DiagnosticWarn = { fg = colors.keyword },
     DiagnosticInfo = { fg = colors.tag },
@@ -244,7 +243,7 @@ local function set_groups()
     LeapLabelSelected = { fg = colors.bg, bg = colors.tag },
 
     -- LSP Inlay Hints.
-    LspInlayHint = { fg = colors.lsp_inlay_hint },
+    LspInlayHint = colors.lsp_inlay_hint,
 
     -- LSP Signature.
     LspSignatureActiveParameter = { italic = true },
